@@ -19,10 +19,10 @@ RUN apt update && apt upgrade -y && \
         zlib1g-dev
 
 COPY . /tmp/userbot_local
-WORKDIR /usr/src/app/DraculaUserBot/
+WORKDIR /usr/src/app/userbot/
 
-RUN git clone https://github.com/devil-shiva/draculauserbot.git /usr/src/app/DraculaUserbot/
-RUN rsync --ignore-existing --recursive /tmp/userbot_local/ /usr/src/app/DraculaUserBot/
+RUN git clone https://github.com/devil-shiva/draculauserbot.git /usr/src/app/userbot/
+RUN rsync --ignore-existing --recursive /tmp/userbot_local/ /usr/src/app/userbot/
 
 RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install --no-warn-script-location --no-cache-dir -r requirements.txt
