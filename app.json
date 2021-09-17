@@ -19,9 +19,9 @@
             "description": "You api hash, from my.telegram.org.",
             "value": ""
         },
-        "SESSION": {
+        "STRING_SESSION": {
             "description": "A secret key for verifying the integrity of signed cookies.",
-            "generator": "secret"
+            "value": ""
         }
     },
     "formation":{
