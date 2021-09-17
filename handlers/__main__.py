@@ -20,8 +20,8 @@ import sys
 from telethon import functions
 from telethon.errors import AuthKeyError, InvalidBufferError
 
-import userbot
-from userbot import client
+import handlers
+from handlers import client
 from .utils import helpers, pluginManager
 
 
